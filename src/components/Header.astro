@@ -1,0 +1,93 @@
+---
+---
+
+<header class="sticky top-0 z-50 px-3 pt-3">
+  <nav class="max-w-6xl mx-auto flex flex-col gap-3 rounded-[1.5rem] border border-white/20 bg-white/10 px-3 py-3 backdrop-blur-2xl shadow-[0_24px_80px_rgba(34,12,86,0.34),inset_0_1px_0_rgba(255,255,255,0.18)] md:flex-row md:items-center md:justify-between md:gap-4 md:rounded-[1.75rem] md:px-5 md:py-4">
+    <a href="#hero" class="flex items-center justify-center gap-2.5 text-center text-xs font-bold tracking-[0.18em] text-white sm:text-sm md:justify-start md:gap-3 md:text-left md:text-lg md:tracking-[0.28em]">
+      <img
+        src="/images/anup-creation-logo.jpg"
+        alt="Anup Creation logo"
+        class="h-8 w-8 rounded-full object-cover shadow-[0_8px_20px_rgba(0,0,0,0.25)] md:h-10 md:w-10"
+      />
+      <span>ANUP CREATIONS</span>
+    </a>
+    <ul class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 text-center md:justify-end md:gap-x-8 md:gap-y-2">
+      <li>
+        <a href="#hero" class="text-xs text-white/85 transition-colors hover:text-white sm:text-sm"
+          >Portfolio</a
+        >
+      </li>
+      <li>
+        <a href="#about" class="text-xs text-white/85 transition-colors hover:text-white sm:text-sm"
+          >About</a
+        >
+      </li>
+      <li>
+        <a href="#gallery" class="text-xs text-white/85 transition-colors hover:text-white sm:text-sm"
+          >Gallery</a
+        >
+      </li>
+      <li>
+        <a
+          href="#experience"
+          class="text-xs text-white/85 transition-colors hover:text-white sm:text-sm">Experience</a
+        >
+      </li>
+      <li>
+        <a
+          href="#services"
+          class="text-xs text-white/85 transition-colors hover:text-white sm:text-sm">Services</a
+        >
+      </li>
+      <li>
+        <a href="#skills" class="text-xs text-white/85 transition-colors hover:text-white sm:text-sm"
+          >Skills</a
+        >
+      </li>
+      <li>
+        <a href="#contact" class="text-xs text-white/85 transition-colors hover:text-white sm:text-sm"
+          >Contact</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  a[href$="#portfolio"],
+  a[href$="#about"],
+  a[href$="#experience"],
+  a[href$="#skills"],
+  a[href$="#services"],
+  a[href$="#gallery"],
+  a[href$="#contact"] {
+    position: relative;
+  }
+
+  a[href$="#portfolio"]::after,
+  a[href$="#about"]::after,
+  a[href$="#experience"]::after,
+  a[href$="#skills"]::after,
+  a[href$="#services"]::after,
+  a[href$="#gallery"]::after,
+  a[href$="#contact"]::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ffd1e8, #7cecff);
+    transition: width 0.3s ease;
+  }
+
+  a[href$="#portfolio"]:hover::after,
+  a[href$="#about"]:hover::after,
+  a[href$="#experience"]:hover::after,
+  a[href$="#skills"]:hover::after,
+  a[href$="#services"]:hover::after,
+  a[href$="#gallery"]:hover::after,
+  a[href$="#contact"]:hover::after {
+    width: 100%;
+  }
+</style>

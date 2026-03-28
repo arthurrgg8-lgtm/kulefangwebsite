@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /dist/
+
+Sitemap: https://anup-parajuli-graphic-designer-staging.b12sites.com/sitemap-index.xml
